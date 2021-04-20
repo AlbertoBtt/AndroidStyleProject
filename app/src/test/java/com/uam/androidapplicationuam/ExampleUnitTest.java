@@ -1,4 +1,4 @@
-package com.uam.myapplication;
+package com.uam.androidapplicationuam;
 
 import org.junit.Test;
 
