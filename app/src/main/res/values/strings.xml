@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidApplicationUAM</string>
+    <string name="textView">Have you been in Stary Rynek? </string>
+    <string name="BotonYes">YES</string>
+    <string name="BotonNo">NO</string>
+
 </resources>
