@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">AndroidApplicationUAM</string>
-    <string name="textView">Have you been in Stary Rynek? </string>
+    <string name="textView">Have you been in Stary Rynek?</string>
     <string name="BotonYes">YES</string>
     <string name="BotonNo">NO</string>
-
+    <string name="BotonOk">OK</string>
+    <string name="textView2">What do you prefer from Stary Rynek?</string>
 </resources>
