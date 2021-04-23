@@ -3,6 +3,16 @@
     <string name="textView">Have you been in Stary Rynek?</string>
     <string name="BotonYes">YES</string>
     <string name="BotonNo">NO</string>
+
+    <string name="textView3">What have you seen in Stary Rynek?</string>
+    <string name="checkbox1">Fountains</string>
+    <string name="checkbox2">Army Museum</string>
+    <string name="checkbox3">Clock's Goats</string>
+    <string name="checkbox4">City Hall</string>
+    <string name="checkbox5">Buildings' front</string>
+    <string name="checkbox6">Bars</string>
+
+
     <string name="BotonOk">OK</string>
     <string name="textView2">What do you prefer from Stary Rynek?</string>
     <string name="textTest">Test Text</string>
