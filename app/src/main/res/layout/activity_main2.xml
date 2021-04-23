@@ -108,6 +108,7 @@
         android:layout_width="186dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/grey"
+        android:onClick="continue2"
         android:text="@string/BotonOk"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

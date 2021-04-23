@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
+    public void continue2(View v){
+        setContentView(R.layout.activity_main3);
+    }
+
 
 
 
