@@ -11,6 +11,13 @@
     <string name="checkbox4">City Hall</string>
     <string name="checkbox5">"Buildings' front"</string>
     <string name="checkbox6">Bars</string>
+    <string name="textview4">Settings</string>
+    <string name="textview5">Titles</string>
+    <string name="textview6">Buttons</string>
+    <string name="textview7">Descriptions</string>
+    <string name="textview8">Skins</string>
+    <string name="textview9">Screen</string>
+
 
 
     <string name="BotonOk">OK</string>

@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
     }
 
-
-
-
+    public void settings(View v){
+        setContentView(R.layout.settings);
+    }
 
 
 
