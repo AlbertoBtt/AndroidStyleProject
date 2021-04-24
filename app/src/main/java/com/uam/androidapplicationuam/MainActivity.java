@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
     }
 
+    public void settings(View v){
+        setContentView(R.layout.settings);
+    }
+
 
 
 
