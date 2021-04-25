@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = (Button)findViewById(R.id.BotonYes);
     }
 
     public void continue1(View v){
@@ -33,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.settings);
     }
 
+    public void return_settings(View v){
+        setContentView(R.layout.activity_main);
+    }
+
+    public void return_main2(View v){
+        setContentView(R.layout.activity_main);
+    }
+
+    public void return_main3(View v){
+        setContentView(R.layout.activity_main2);
+    }
 
 
 
