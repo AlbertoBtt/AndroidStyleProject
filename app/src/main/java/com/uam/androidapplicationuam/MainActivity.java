@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Set;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void settings(View v){
-        setContentView(R.layout.settings);
+        Intent intent1 = new Intent(this, SettingsActivity.class);
+        startActivity(intent1);
+        //setContentView(R.layout.settings);
     }
 
     public void return_settings(View v){
