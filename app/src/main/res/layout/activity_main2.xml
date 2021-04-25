@@ -124,6 +124,7 @@
         android:backgroundTint="@color/grey"
         android:onClick="continue2"
         android:text="@string/BotonOk"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
