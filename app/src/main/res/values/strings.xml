@@ -18,6 +18,19 @@
     <string name="textview8">Skins</string>
     <string name="textview9">Screen</string>
 
+    <string name="titlesFont">Font</string>
+    <string name="titlesSize">Size</string>
+    <string name="titlesColor">Color</string>
+
+    <string name="ButtonFont">Font</string>
+    <string name="ButtonFontSize">Font Size</string>
+    <string name="ButtonColor">Button Color</string>
+    <string name="ButtonFontColor">Font Color</string>
+
+    <string name="ScreenBackground">Background</string>
+
+
+
 
     <string name="BotonOk">OK</string>
     <string name="textView2">What do you prefer from Stary Rynek?</string>
