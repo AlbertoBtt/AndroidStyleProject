@@ -18,22 +18,6 @@
         app:srcCompat="@drawable/abc_vector_test"
         app:tint="@android:color/darker_gray" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/black_background"
-        android:contentDescription="@string/textview4"
-        android:onClick="settings"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -56,8 +40,6 @@
         android:backgroundTint="@color/grey"
         android:onClick="continue3"
         android:text="@string/BotonOk"
-        android:textColor="@color/white"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -84,27 +66,24 @@
 
                 <CheckBox
                     android:id="@+id/checkBox20"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox1"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox1" />
 
                 <CheckBox
                     android:id="@+id/checkBox24"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox4"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox4" />
 
                 <CheckBox
                     android:id="@+id/checkBox27"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox2"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox2" />
             </TableRow>
 
             <TableRow
@@ -113,27 +92,24 @@
 
                 <CheckBox
                     android:id="@+id/checkBox21"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox2"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox2" />
 
                 <CheckBox
                     android:id="@+id/checkBox25"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox5"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox5" />
 
                 <CheckBox
                     android:id="@+id/checkBox28"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox3"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox3" />
             </TableRow>
 
             <TableRow
@@ -142,27 +118,24 @@
 
                 <CheckBox
                     android:id="@+id/checkBox22"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox3"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox3" />
 
                 <CheckBox
                     android:id="@+id/checkBox26"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox6"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox6" />
 
                 <CheckBox
                     android:id="@+id/checkBox30"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox4"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox4" />
 
             </TableRow>
 
@@ -172,27 +145,24 @@
 
                 <CheckBox
                     android:id="@+id/checkBox23"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox4"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox4" />
 
                 <CheckBox
                     android:id="@+id/checkBox29"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox1"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox1" />
 
                 <CheckBox
                     android:id="@+id/checkBox31"
+                    style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox5"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="@string/checkbox5" />
             </TableRow>
         </TableLayout>
     </HorizontalScrollView>
