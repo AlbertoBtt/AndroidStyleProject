@@ -9,4 +9,99 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+
+    <string-array name="font_entries">
+        <item>Font1</item>
+        <item>Font2</item>
+
+    </string-array>
+    <string-array name="font_values">
+        <item>coolbetica</item>
+        <item>font2</item>
+
+    </string-array>
+
+    <string-array name="fontsize_entries">
+        <item>10</item>
+        <item>12</item>
+
+    </string-array>
+    <string-array name="fontsize_values">
+        <item>10</item>
+        <item>12</item>
+
+    </string-array>
+
+
+    <string-array name="fontcolor_entries">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+    <string-array name="fontcolor_values">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+
+    <string-array name="buttoncolor_entries">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+    <string-array name="buttoncolor_values">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+    <string-array name="buttonfontcolor_entries">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+    <string-array name="buttonfontcolor_values">
+        <item>Red</item>
+        <item>Blue</item>
+
+    </string-array>
+    <string-array name="buttonfontsize_entries">
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string-array name="buttonfontsize_values">
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string-array name="buttonfont_entries">
+        <item>Arial</item>
+        <item>Times new Roman</item>
+
+    </string-array>
+    <string-array name="buttonfont_values">
+        <item>Arial</item>
+        <item>Times new Roman</item>
+
+    </string-array>
+
+    <string-array name="Screen_entries">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Cream</item>
+
+    </string-array>
+    <string-array name="Screen_values">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Cream</item>
+
+    </string-array>
+
+
+
+
 </resources>
