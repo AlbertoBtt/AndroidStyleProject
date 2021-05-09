@@ -1,24 +1,24 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/black_background"
-    android:backgroundTint="@color/black_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:backgroundTintMode="src_in">
     <PreferenceCategory android:title="@string/textview5">
 
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Font1"
             android:entries="@array/font_entries"
             android:entryValues="@array/font_values"
             android:key="list_preference_2"
             android:summary="Click to select an option"
             android:title="@string/titlesFont" />
         <ListPreference
+            android:defaultValue="10"
             android:entries="@array/fontsize_entries"
             android:entryValues="@array/fontsize_values"
             android:key="list_preference_1"
             android:summary="Click to select an option"
             android:title="@string/titlesSize" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Red"
             android:entries="@array/fontcolor_entries"
             android:entryValues="@array/fontcolor_values"
             android:key="list_preference_3"
@@ -28,28 +28,28 @@
     <PreferenceCategory android:title="@string/textview6">
 
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Red"
             android:entries="@array/buttoncolor_entries"
             android:entryValues="@array/buttoncolor_values"
             android:key="list_preference_4"
             android:summary="Click to select an option"
             android:title="@string/ButtonColor" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Arial"
             android:entries="@array/buttonfont_entries"
             android:entryValues="@array/buttonfont_entries"
             android:key="list_preference_5"
             android:summary="Click to select an option"
             android:title="@string/ButtonFont" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="10"
             android:entries="@array/buttonfontsize_entries"
             android:entryValues="@array/buttonfontsize_values"
             android:key="list_preference_6"
             android:summary="Click to select an option"
             android:title="@string/ButtonFontSize" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Red"
             android:entries="@array/buttonfontcolor_entries"
             android:entryValues="@array/buttonfontcolor_values"
             android:key="list_preference_7"
@@ -59,12 +59,12 @@
     <PreferenceCategory android:title="@string/textview9">
 
         <ListPreference
-            android:defaultValue="1"
             android:entries="@array/Screen_entries"
             android:entryValues="@array/Screen_values"
             android:key="list_preference_8"
             android:summary="Click to select an option"
-            android:title="@string/ScreenBackground" />
+            android:title="@string/ScreenBackground"
+            app:defaultValue="Black"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
