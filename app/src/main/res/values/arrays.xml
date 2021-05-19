@@ -35,11 +35,13 @@
 
 
     <string-array name="fontcolor_entries">
+        <item>White</item>
         <item>Red</item>
         <item>Blue</item>
 
     </string-array>
     <string-array name="fontcolor_values">
+        <item>White</item>
         <item>Red</item>
         <item>Blue</item>
 

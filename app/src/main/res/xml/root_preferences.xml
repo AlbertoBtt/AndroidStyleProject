@@ -18,7 +18,7 @@
             android:summary="Click to select an option"
             android:title="@string/titlesSize" />
         <ListPreference
-            android:defaultValue="Red"
+            android:defaultValue="White"
             android:entries="@array/fontcolor_entries"
             android:entryValues="@array/fontcolor_values"
             android:key="list_preference_3"

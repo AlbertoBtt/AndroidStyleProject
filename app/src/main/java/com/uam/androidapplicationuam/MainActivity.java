@@ -1,13 +1,17 @@
 package com.uam.androidapplicationuam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setSettingsScreen1();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -26,12 +31,15 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
     public void continue1(View v){
         setContentView(R.layout.activity_main2);
+        setSettingsScreen2();
     }
 
     public void continue2(View v){
         setContentView(R.layout.activity_main3);
+        setSettingsScreen3();
     }
 
     public void continue3(View v){
@@ -45,13 +53,66 @@ public class MainActivity extends AppCompatActivity {
 
     public void return_main2(View v){
         setContentView(R.layout.activity_main);
+        setSettingsScreen1();
     }
 
     public void return_main3(View v){
         setContentView(R.layout.activity_main2);
+        setSettingsScreen2();
     }
 
+    private void setSettingsScreen1(){
 
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        TextView title1=findViewById(R.id.textViewFirst);
+        String title1New= pref.getString("list_preference_3","White");
+        switch (title1New){
+            case "White":
+                title1.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                title1.setTextColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Red":
+                title1.setTextColor(getResources().getColor(R.color.Red));
+                break;
+        }
+    }
 
+    private void setSettingsScreen2(){
+
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        TextView title2=findViewById(R.id.textView2);
+        String title1New= pref.getString("list_preference_3","White");
+        switch (title1New){
+            case "White":
+                title2.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                title2.setTextColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Red":
+                title2.setTextColor(getResources().getColor(R.color.Red));
+                break;
+        }
+    }
+
+    private void setSettingsScreen3(){
+
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        TextView title3=findViewById(R.id.textView3);
+        String title1New= pref.getString("list_preference_3","White");
+        switch (title1New){
+            case "White":
+                title3.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                title3.setTextColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Red":
+                title3.setTextColor(getResources().getColor(R.color.Red));
+                break;
+        }
+    }
 }
 
