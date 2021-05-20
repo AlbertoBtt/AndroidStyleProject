@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
         String title1Font = pref.getString("list_preference_2","Coolvetica");
+        Button button1= (Button)findViewById(R.id.BotonYes);
+        Button button2= (Button)findViewById(R.id.BotonNo);
+        String buttonBackground= pref.getString("list_preference_3","White");
 
         switch (title1New){
             case "White":
@@ -133,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         title1.setTextSize(Float.parseFloat(titleSize));
+
     }
 
     private void setSettingsScreen2(){
