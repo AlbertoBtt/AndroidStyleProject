@@ -1,8 +1,10 @@
 package com.uam.androidapplicationuam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.PreferenceManager;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
@@ -11,12 +13,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         TextView title1=findViewById(R.id.textViewFirst);
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
-        String title1Font = pref.getString("list_preference_2,","Coolvetica");
+        String title1Font = pref.getString("list_preference_2","Coolvetica");
 
         switch (title1New){
             case "White":
@@ -102,33 +104,30 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+
         switch (title1Font){
-
             case "Arial":
-                Typeface Arial = Typeface.createFromAsset(getAssets(),
-                        "font/arial.ttf");
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
                 title1.setTypeface(Arial);
+                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
             case "Comic Sans":
-                Typeface Comic = Typeface.createFromAsset(getAssets(),
-                        "font/comic.ttf");
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
                 title1.setTypeface(Comic);
-           /* case "Coolvetica":
-                Typeface Coolvetica = Typeface.createFromAsset(getAssets(),
-                        "font/coolvetica.ttf");
+                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
                 title1.setTypeface(Coolvetica);
+                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
             case "Book Antiqua":
-                Typeface Bookantiqua = Typeface.createFromAsset(getAssets(),
-                        "font/bookantiqua.ttf");
-                title1.setTypeface(Bookantiqua);*/
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                title1.setTypeface(Bookantiqua);
+                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
             case "Times New Roman":
-                Typeface Time = Typeface.createFromAsset(getAssets(),
-                        "font/times.ttf");
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
                 title1.setTypeface(Time);
-
-
+                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
         }
         title1.setTextSize(Float.parseFloat(titleSize));
-
     }
 
     private void setSettingsScreen2(){
