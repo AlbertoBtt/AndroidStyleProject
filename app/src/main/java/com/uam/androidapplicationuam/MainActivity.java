@@ -7,7 +7,6 @@ import androidx.preference.PreferenceManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -71,18 +70,20 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title1=findViewById(R.id.textViewFirst);
         String title1New= pref.getString("list_preference_3","White");
-        String titleSize=pref.getString("list_preference_1", "36");
+        String titleSize=pref.getString("list_preference_1", "30");
         String title1Font = pref.getString("list_preference_2","Coolvetica");
         Button button1= (Button)findViewById(R.id.BotonYes);
         Button button2= (Button)findViewById(R.id.BotonNo);
-        String buttonBackground= pref.getString("list_preference_4","Grey");
+        String buttonBackground= pref.getString("list_preference_4","White");
+        String buttonSize=pref.getString("list_preference_6", "30");
+        String buttonFont = pref.getString("list_preference_5","Coolvetica");
 
         switch (title1New){
             case "White":
                 title1.setTextColor(getResources().getColor(R.color.white));
                 break;
             case "Blue":
-                title1.setTextColor(getResources().getColor(R.color.blue));
+                title1.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
             case "Green":
                 title1.setTextColor(getResources().getColor(R.color.green));
@@ -138,7 +139,38 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         title1.setTextSize(Float.parseFloat(titleSize));
+        switch (buttonFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                button1.setTypeface(Arial);
+                button2.setTypeface(Arial);
 
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                button1.setTypeface(Comic);
+                button2.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                button1.setTypeface(Coolvetica);
+                button2.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                button1.setTypeface(Bookantiqua);
+                button2.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                button1.setTypeface(Time);
+                button2.setTypeface(Time);
+
+                break;
+        }
         switch (buttonBackground){
             case "White":
                 button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
@@ -181,6 +213,8 @@ public class MainActivity extends AppCompatActivity {
                 button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
                 break;
         }
+        button1.setTextSize(Float.parseFloat(buttonSize));
+        button2.setTextSize(Float.parseFloat(buttonSize));
     }
 
     private void setSettingsScreen2(){
@@ -192,6 +226,9 @@ public class MainActivity extends AppCompatActivity {
         String title2Font = pref.getString("list_preference_2","Coolvetica");
         Button button= (Button)findViewById(R.id.button);
         String buttonBackground= pref.getString("list_preference_4","Grey");
+        String buttonFont = pref.getString("list_preference_5","Coolvetica");
+        String buttonSize=pref.getString("list_preference_6", "30");
+
         switch (title1New){
             case "White":
                 title2.setTextColor(getResources().getColor(R.color.white));
@@ -212,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
                 title2.setTextColor(getResources().getColor(R.color.Yellow));
                 break;
             case "Teal":
-                title2.setTextColor(getResources().getColor(R.color.teal_700));
+                title2.setTextColor(getResources().getColor(R.color.teal_200));
                 break;
             case "Purple":
                 title2.setTextColor(getResources().getColor(R.color.purple_500));
@@ -284,6 +321,33 @@ public class MainActivity extends AppCompatActivity {
                 button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
                 break;
         }
+        switch (buttonFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                button.setTypeface(Arial);
+
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                button.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                button.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                button.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                button.setTypeface(Time);
+                break;
+        }
+        button.setTextSize(Float.parseFloat(buttonSize));
     }
 
     private void setSettingsScreen3(){
@@ -295,6 +359,8 @@ public class MainActivity extends AppCompatActivity {
         String title3Font = pref.getString("list_preference_2","Coolvetica");
         Button button= (Button)findViewById(R.id.button2);
         String buttonBackground= pref.getString("list_preference_4","Grey");
+        String buttonFont = pref.getString("list_preference_5","Coolvetica");
+        String buttonSize=pref.getString("list_preference_6", "30");
         switch (title1New){
             case "White":
                 title3.setTextColor(getResources().getColor(R.color.white));
@@ -387,6 +453,33 @@ public class MainActivity extends AppCompatActivity {
                 button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
                 break;
         }
+        switch (buttonFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                button.setTypeface(Arial);
+
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                button.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                button.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                button.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                button.setTypeface(Time);
+                break;
+        }
+        button.setTextSize(Float.parseFloat(buttonSize));
     }
 }
 
