@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title1=findViewById(R.id.textViewFirst);
         String title1New= pref.getString("list_preference_3","White");
+        String titleSize=pref.getString("list_preference_1", "36");
         String title1Font = pref.getString("list_preference_2,","Coolvetica");
 
         switch (title1New){
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-
+        title1.setTextSize(Float.parseFloat(titleSize));
 
     }
 
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title2=findViewById(R.id.textView2);
         String title1New= pref.getString("list_preference_3","White");
-
+        String titleSize=pref.getString("list_preference_1", "36");
         switch (title1New){
             case "White":
                 title2.setTextColor(getResources().getColor(R.color.white));
@@ -168,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
                 title2.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+        title2.setTextSize(Float.parseFloat(titleSize));
     }
 
     private void setSettingsScreen3(){
@@ -175,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title3=findViewById(R.id.textView3);
         String title1New= pref.getString("list_preference_3","White");
+        String titleSize=pref.getString("list_preference_1", "36");
         switch (title1New){
             case "White":
                 title3.setTextColor(getResources().getColor(R.color.white));
@@ -207,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
                 title3.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+        title3.setTextSize(Float.parseFloat(titleSize));
     }
 }
 
