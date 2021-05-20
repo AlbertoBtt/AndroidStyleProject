@@ -7,6 +7,7 @@ import androidx.preference.PreferenceManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -74,14 +75,14 @@ public class MainActivity extends AppCompatActivity {
         String title1Font = pref.getString("list_preference_2","Coolvetica");
         Button button1= (Button)findViewById(R.id.BotonYes);
         Button button2= (Button)findViewById(R.id.BotonNo);
-        String buttonBackground= pref.getString("list_preference_3","White");
+        String buttonBackground= pref.getString("list_preference_4","Grey");
 
         switch (title1New){
             case "White":
                 title1.setTextColor(getResources().getColor(R.color.white));
                 break;
             case "Blue":
-                title1.setTextColor(getResources().getColor(R.color.teal_700));
+                title1.setTextColor(getResources().getColor(R.color.blue));
                 break;
             case "Green":
                 title1.setTextColor(getResources().getColor(R.color.green));
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Yellow));
                 break;
             case "Teal":
-                title1.setTextColor(getResources().getColor(R.color.teal_200));
+                title1.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
             case "Purple":
                 title1.setTextColor(getResources().getColor(R.color.purple_500));
@@ -138,6 +139,48 @@ public class MainActivity extends AppCompatActivity {
         }
         title1.setTextSize(Float.parseFloat(titleSize));
 
+        switch (buttonBackground){
+            case "White":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
     }
 
     private void setSettingsScreen2(){
@@ -147,12 +190,14 @@ public class MainActivity extends AppCompatActivity {
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
         String title2Font = pref.getString("list_preference_2","Coolvetica");
+        Button button= (Button)findViewById(R.id.button);
+        String buttonBackground= pref.getString("list_preference_4","Grey");
         switch (title1New){
             case "White":
                 title2.setTextColor(getResources().getColor(R.color.white));
                 break;
             case "Blue":
-                title2.setTextColor(getResources().getColor(R.color.teal_700));
+                title2.setTextColor(getResources().getColor(R.color.blue));
                 break;
             case "Green":
                 title2.setTextColor(getResources().getColor(R.color.green));
@@ -167,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
                 title2.setTextColor(getResources().getColor(R.color.Yellow));
                 break;
             case "Teal":
-                title2.setTextColor(getResources().getColor(R.color.teal_200));
+                title2.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
             case "Purple":
                 title2.setTextColor(getResources().getColor(R.color.purple_500));
@@ -207,6 +252,38 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         title2.setTextSize(Float.parseFloat(titleSize));
+        switch (buttonBackground){
+            case "White":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
     }
 
     private void setSettingsScreen3(){
@@ -216,12 +293,14 @@ public class MainActivity extends AppCompatActivity {
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
         String title3Font = pref.getString("list_preference_2","Coolvetica");
+        Button button= (Button)findViewById(R.id.button2);
+        String buttonBackground= pref.getString("list_preference_4","Grey");
         switch (title1New){
             case "White":
                 title3.setTextColor(getResources().getColor(R.color.white));
                 break;
             case "Blue":
-                title3.setTextColor(getResources().getColor(R.color.teal_700));
+                title3.setTextColor(getResources().getColor(R.color.blue));
                 break;
             case "Green":
                 title3.setTextColor(getResources().getColor(R.color.green));
@@ -236,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
                 title3.setTextColor(getResources().getColor(R.color.Yellow));
                 break;
             case "Teal":
-                title3.setTextColor(getResources().getColor(R.color.teal_200));
+                title3.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
             case "Purple":
                 title3.setTextColor(getResources().getColor(R.color.purple_500));
@@ -276,6 +355,38 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         title3.setTextSize(Float.parseFloat(titleSize));
+        switch (buttonBackground){
+            case "White":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
     }
 }
 
