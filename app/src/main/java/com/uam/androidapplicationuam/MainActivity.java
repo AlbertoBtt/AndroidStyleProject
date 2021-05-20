@@ -104,28 +104,28 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
-
+        Toast.makeText(this, title1Font, Toast.LENGTH_SHORT).show();
         switch (title1Font){
             case "Arial":
-                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                Typeface Arial = ResourcesCompat.getFont(context, R.font.arial);
                 title1.setTypeface(Arial);
-                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+                break;
             case "Comic Sans":
-                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                Typeface Comic = ResourcesCompat.getFont(context, R.font.comic);
                 title1.setTypeface(Comic);
-                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+                break;
             case "Coolvetica":
-                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                Typeface Coolvetica = ResourcesCompat.getFont(context, R.font.coolvetica);
                 title1.setTypeface(Coolvetica);
-                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+                break;
             case "Book Antiqua":
-                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                Typeface Bookantiqua = ResourcesCompat.getFont(context, R.font.bookantiqua);
                 title1.setTypeface(Bookantiqua);
-                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+                break;
             case "Times New Roman":
-                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                Typeface Time = ResourcesCompat.getFont(context, R.font.times);
                 title1.setTypeface(Time);
-                Toast.makeText(this, "All Is Tested!!!!!", Toast.LENGTH_SHORT).show();
+                break;
         }
         title1.setTextSize(Float.parseFloat(titleSize));
     }

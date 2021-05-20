@@ -17,8 +17,6 @@
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
-
-
     </string-array>
     <string-array name="font_values">
         <item>Arial</item>
@@ -26,7 +24,6 @@
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
-
     </string-array>
    
 
