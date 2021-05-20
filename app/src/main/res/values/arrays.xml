@@ -13,7 +13,7 @@
 
     <string-array name="font_entries">
         <item>Arial</item>
-        <item>Bookantiqua</item>
+        <item>Book Antiqua</item>
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
@@ -22,7 +22,7 @@
     </string-array>
     <string-array name="font_values">
         <item>Arial</item>
-        <item>Bookantiqua</item>
+        <item>Book Antiqua</item>
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
@@ -160,7 +160,7 @@
     </string-array>
     <string-array name="buttonfont_entries">
         <item>Arial</item>
-        <item>Bookantiqua</item>
+        <item>Book Antiqua</item>
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
@@ -168,7 +168,7 @@
     </string-array>
     <string-array name="buttonfont_values">
         <item>Arial</item>
-        <item>Bookantiqua</item>
+        <item>Book Antiqua</item>
         <item>Comic Sans</item>
         <item>Coolvetica</item>
         <item>Times New Roman</item>
