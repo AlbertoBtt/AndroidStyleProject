@@ -37,13 +37,17 @@
     <string-array name="fontcolor_entries">
         <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
         <item>Blue</item>
-
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
     </string-array>
     <string-array name="fontcolor_values">
         <item>White</item>
         <item>Red</item>
-        <item>Blue</item>
+        <item>Teal</item>
 
     </string-array>
 
