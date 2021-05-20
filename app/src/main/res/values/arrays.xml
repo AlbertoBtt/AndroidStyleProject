@@ -12,13 +12,20 @@
 
 
     <string-array name="font_entries">
-        <item>Font1</item>
-        <item>Font2</item>
+        <item>Arial</item>
+        <item>Bookantiqua</item>
+        <item>Comic Sans</item>
+        <item>Coolvetica</item>
+        <item>Times New Roman</item>
+
 
     </string-array>
     <string-array name="font_values">
-        <item>font1</item>
-        <item>font2</item>
+        <item>Arial</item>
+        <item>Bookantiqua</item>
+        <item>Comic Sans</item>
+        <item>Coolvetica</item>
+        <item>Times New Roman</item>
 
     </string-array>
 
@@ -83,12 +90,18 @@
     </string-array>
     <string-array name="buttonfont_entries">
         <item>Arial</item>
-        <item>Times new Roman</item>
+        <item>Bookantiqua</item>
+        <item>Comic Sans</item>
+        <item>Coolvetica</item>
+        <item>Times New Roman</item>
 
     </string-array>
     <string-array name="buttonfont_values">
         <item>Arial</item>
-        <item>Times new Roman</item>
+        <item>Bookantiqua</item>
+        <item>Comic Sans</item>
+        <item>Coolvetica</item>
+        <item>Times New Roman</item>
 
     </string-array>
 
