@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title1=findViewById(R.id.textViewFirst);
         String title1New= pref.getString("list_preference_3","White");
-        String titleSize=pref.getString("list_preference_1", "30");
+        String titleSize=pref.getString("list_preference_1", "36");
         String title1Font = pref.getString("list_preference_2","Coolvetica");
         Button button1= (Button)findViewById(R.id.BotonYes);
         Button button2= (Button)findViewById(R.id.BotonNo);
-        String buttonBackground= pref.getString("list_preference_4","White");
+        String buttonBackground= pref.getString("list_preference_4","Grey");
         String buttonSize=pref.getString("list_preference_6", "30");
         String buttonFont = pref.getString("list_preference_5","Coolvetica");
 
