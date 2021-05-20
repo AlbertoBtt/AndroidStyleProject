@@ -5,6 +5,7 @@ import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title1=findViewById(R.id.textViewFirst);
         String title1New= pref.getString("list_preference_3","White");
+        String title1Font = pref.getString("list_preference_2,","Coolvetica");
+
         switch (title1New){
             case "White":
                 title1.setTextColor(getResources().getColor(R.color.white));
@@ -98,6 +101,32 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+        switch (title1Font){
+
+            case "Arial":
+                Typeface Arial = Typeface.createFromAsset(getAssets(),
+                        "font/arial.ttf");
+                title1.setTypeface(Arial);
+            case "Comic Sans":
+                Typeface Comic = Typeface.createFromAsset(getAssets(),
+                        "font/comic.ttf");
+                title1.setTypeface(Comic);
+           /* case "Coolvetica":
+                Typeface Coolvetica = Typeface.createFromAsset(getAssets(),
+                        "font/coolvetica.ttf");
+                title1.setTypeface(Coolvetica);
+            case "Book Antiqua":
+                Typeface Bookantiqua = Typeface.createFromAsset(getAssets(),
+                        "font/bookantiqua.ttf");
+                title1.setTypeface(Bookantiqua);*/
+            case "Times New Roman":
+                Typeface Time = Typeface.createFromAsset(getAssets(),
+                        "font/times.ttf");
+                title1.setTypeface(Time);
+
+
+        }
+
 
     }
 
@@ -106,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         TextView title2=findViewById(R.id.textView2);
         String title1New= pref.getString("list_preference_3","White");
+
         switch (title1New){
             case "White":
                 title2.setTextColor(getResources().getColor(R.color.white));
