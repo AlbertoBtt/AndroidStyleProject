@@ -104,27 +104,32 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
-        Toast.makeText(this, title1Font, Toast.LENGTH_SHORT).show();
+
         switch (title1Font){
             case "Arial":
-                Typeface Arial = ResourcesCompat.getFont(context, R.font.arial);
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
                 title1.setTypeface(Arial);
+
                 break;
             case "Comic Sans":
-                Typeface Comic = ResourcesCompat.getFont(context, R.font.comic);
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
                 title1.setTypeface(Comic);
+
                 break;
             case "Coolvetica":
-                Typeface Coolvetica = ResourcesCompat.getFont(context, R.font.coolvetica);
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
                 title1.setTypeface(Coolvetica);
+
                 break;
             case "Book Antiqua":
-                Typeface Bookantiqua = ResourcesCompat.getFont(context, R.font.bookantiqua);
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
                 title1.setTypeface(Bookantiqua);
+
                 break;
             case "Times New Roman":
-                Typeface Time = ResourcesCompat.getFont(context, R.font.times);
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
                 title1.setTypeface(Time);
+
                 break;
         }
         title1.setTextSize(Float.parseFloat(titleSize));
@@ -136,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         TextView title2=findViewById(R.id.textView2);
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
+        String title2Font = pref.getString("list_preference_2","Coolvetica");
         switch (title1New){
             case "White":
                 title2.setTextColor(getResources().getColor(R.color.white));
@@ -168,6 +174,33 @@ public class MainActivity extends AppCompatActivity {
                 title2.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+        switch (title2Font){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                title2.setTypeface(Arial);
+
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                title2.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                title2.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                title2.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                title2.setTypeface(Time);
+
+                break;
+        }
         title2.setTextSize(Float.parseFloat(titleSize));
     }
 
@@ -177,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
         TextView title3=findViewById(R.id.textView3);
         String title1New= pref.getString("list_preference_3","White");
         String titleSize=pref.getString("list_preference_1", "36");
+        String title3Font = pref.getString("list_preference_2","Coolvetica");
         switch (title1New){
             case "White":
                 title3.setTextColor(getResources().getColor(R.color.white));
@@ -207,6 +241,33 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "Red":
                 title3.setTextColor(getResources().getColor(R.color.Red));
+                break;
+        }
+        switch (title3Font){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                title3.setTypeface(Arial);
+
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                title3.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                title3.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                title3.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                title3.setTypeface(Time);
+
                 break;
         }
         title3.setTextSize(Float.parseFloat(titleSize));
