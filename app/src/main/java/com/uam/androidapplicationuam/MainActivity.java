@@ -73,6 +73,27 @@ public class MainActivity extends AppCompatActivity {
             case "Blue":
                 title1.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
+            case "Green":
+                title1.setTextColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                title1.setTextColor(getResources().getColor(R.color.black));
+                break;
+            case "Cream":
+                title1.setTextColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                title1.setTextColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                title1.setTextColor(getResources().getColor(R.color.teal_200));
+                break;
+            case "Purple":
+                title1.setTextColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                title1.setTextColor(getResources().getColor(R.color.grey));
+                break;
             case "Red":
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
@@ -91,6 +112,27 @@ public class MainActivity extends AppCompatActivity {
             case "Blue":
                 title2.setTextColor(getResources().getColor(R.color.teal_700));
                 break;
+            case "Green":
+                title2.setTextColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                title2.setTextColor(getResources().getColor(R.color.black));
+                break;
+            case "Cream":
+                title2.setTextColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                title2.setTextColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                title2.setTextColor(getResources().getColor(R.color.teal_200));
+                break;
+            case "Purple":
+                title2.setTextColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                title2.setTextColor(getResources().getColor(R.color.grey));
+                break;
             case "Red":
                 title2.setTextColor(getResources().getColor(R.color.Red));
                 break;
@@ -108,6 +150,27 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "Blue":
                 title3.setTextColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Green":
+                title3.setTextColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                title3.setTextColor(getResources().getColor(R.color.black));
+                break;
+            case "Cream":
+                title3.setTextColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                title3.setTextColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                title3.setTextColor(getResources().getColor(R.color.teal_200));
+                break;
+            case "Purple":
+                title3.setTextColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                title3.setTextColor(getResources().getColor(R.color.grey));
                 break;
             case "Red":
                 title3.setTextColor(getResources().getColor(R.color.Red));
