@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 title1.setTextColor(getResources().getColor(R.color.Red));
                 break;
         }
+
     }
 
     private void setSettingsScreen2(){
