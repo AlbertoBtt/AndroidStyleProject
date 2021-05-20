@@ -74,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
         String title1Font = pref.getString("list_preference_2","Coolvetica");
         Button button1= (Button)findViewById(R.id.BotonYes);
         Button button2= (Button)findViewById(R.id.BotonNo);
-        String buttonBackground= pref.getString("list_preference_3","White");
+        String buttonBackground= pref.getString("list_preference_4","White");
+        String buttonSize=pref.getString("list_preference_6", "36");
+        String buttonFont = pref.getString("list_preference_5","Coolvetica");
 
         switch (title1New){
             case "White":
@@ -137,6 +139,41 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         title1.setTextSize(Float.parseFloat(titleSize));
+        switch (buttonFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                button1.setTypeface(Arial);
+                button2.setTypeface(Arial);
+
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                button1.setTypeface(Comic);
+                button2.setTypeface(Comic);
+
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                button1.setTypeface(Coolvetica);
+                button2.setTypeface(Coolvetica);
+
+                break;
+            case "Book Antiqua":
+                Typeface Bookantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                button1.setTypeface(Bookantiqua);
+                button2.setTypeface(Bookantiqua);
+
+                break;
+            case "Times New Roman":
+                Typeface Time = ResourcesCompat.getFont(this, R.font.times);
+                button1.setTypeface(Time);
+                button2.setTypeface(Time);
+
+                break;
+        }
+        button1.setTextSize(Float.parseFloat(buttonSize));
+        button2.setTextSize(Float.parseFloat(buttonSize));
+
 
     }
 
