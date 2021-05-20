@@ -14,23 +14,37 @@
     <string-array name="font_entries">
         <item>Font1</item>
         <item>Font2</item>
-
     </string-array>
     <string-array name="font_values">
         <item>font1</item>
         <item>font2</item>
-
     </string-array>
 
     <string-array name="fontsize_entries">
-        <item>10</item>
-        <item>12</item>
-
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
     </string-array>
     <string-array name="fontsize_values">
-        <item>10</item>
-        <item>12</item>
-
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
     </string-array>
 
 
@@ -43,43 +57,96 @@
         <item>Grey</item>
         <item>Green</item>
         <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
     <string-array name="fontcolor_values">
         <item>White</item>
         <item>Red</item>
         <item>Teal</item>
-
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
 
     <string-array name="buttoncolor_entries">
+        <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
         <item>Blue</item>
-
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
     <string-array name="buttoncolor_values">
+        <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
         <item>Blue</item>
-
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
     <string-array name="buttonfontcolor_entries">
+        <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
         <item>Blue</item>
-
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
     <string-array name="buttonfontcolor_values">
+        <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
         <item>Blue</item>
-
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Cream</item>
     </string-array>
     <string-array name="buttonfontsize_entries">
-        <item>10</item>
-        <item>11</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
 
     </string-array>
     <string-array name="buttonfontsize_values">
-        <item>10</item>
-        <item>11</item>
-
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
     </string-array>
     <string-array name="buttonfont_entries">
         <item>Arial</item>
@@ -91,23 +158,28 @@
         <item>Times new Roman</item>
 
     </string-array>
-
     <string-array name="Screen_entries">
-        <item>Black</item>
         <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
         <item>Cream</item>
-
     </string-array>
     <string-array name="Screen_values">
-        <item>Black</item>
         <item>White</item>
         <item>Red</item>
+        <item>Teal</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
         <item>Cream</item>
-
     </string-array>
-
-
-
-
 </resources>
