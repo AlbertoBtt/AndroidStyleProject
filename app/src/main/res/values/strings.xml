@@ -17,6 +17,7 @@
     <string name="textview7">Descriptions</string>
     <string name="textview8">Skins</string>
     <string name="textview9">Screen</string>
+    <string name="normaltext">Lists Text</string>
 
     <string name="titlesFont">Font</string>
     <string name="titlesSize">Size</string>
@@ -28,6 +29,10 @@
     <string name="ButtonFontColor">Font Color</string>
 
     <string name="ScreenBackground">Background</string>
+
+
+
+
 
     <string name="BotonOk">OK</string>
     <string name="textView2">What do you prefer from Stary Rynek?</string>

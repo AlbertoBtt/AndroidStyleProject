@@ -59,12 +59,37 @@
     <PreferenceCategory android:title="@string/textview9">
 
         <ListPreference
+            android:background="#009688"
             android:entries="@array/Screen_entries"
             android:entryValues="@array/Screen_values"
             android:key="list_preference_8"
             android:summary="Click to select an option"
             android:title="@string/ScreenBackground"
-            app:defaultValue="Black"/>
+            app:defaultValue="Black" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/normaltext">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/normaltextfont_entries"
+            android:entryValues="@array/normaltextfont_values"
+            android:key="list_preference_9"
+            android:summary="Click to select an option"
+            android:title="@string/titlesFont" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/normaltextsize_entries"
+            android:entryValues="@array/normaltextsize_values"
+            android:key="list_preference_10"
+            android:summary="Click to select an option"
+            android:title="@string/titlesSize" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/normaltextcolor_entries"
+            android:entryValues="@array/normaltextcolor_values"
+            android:key="list_preference_11"
+            android:summary="Click to select an option"
+            android:title="@string/titlesColor" />
     </PreferenceCategory>
 
 </PreferenceScreen>
