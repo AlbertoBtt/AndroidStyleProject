@@ -545,6 +545,62 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
+        for(int i=0;i<nRadioButtons;i++){
+            list.get(i).setTextSize(Float.parseFloat(textSize));
+        }
+
+        switch (textColor){
+            case "White":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.white));
+                }
+                break;
+            case "Blue":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.blue));
+                }
+                break;
+            case "Green":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.green));
+                }
+                break;
+            case "Black":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.black));
+                }
+                break;
+            case "Cream":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.cream));
+                }
+                break;
+            case "Yellow":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.Yellow));
+                }
+                break;
+            case "Teal":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.teal_700));
+                }
+                break;
+            case "Purple":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.purple_500));
+                }
+                break;
+            case "Grey":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.grey));
+                }
+                break;
+            case "Red":
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.Red));
+                }
+                break;
+        }
     }
 
     private void setSettingsScreen3(){
