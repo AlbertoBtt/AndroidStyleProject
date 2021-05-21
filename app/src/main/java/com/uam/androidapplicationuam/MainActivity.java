@@ -1,6 +1,7 @@
 package com.uam.androidapplicationuam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.PreferenceManager;
 
@@ -14,12 +15,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
-    Context context = this;
+
+    private int nRadioButtons =8;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -77,13 +84,16 @@ public class MainActivity extends AppCompatActivity {
         String buttonBackground= pref.getString("list_preference_4","Grey");
         String buttonSize=pref.getString("list_preference_6", "30");
         String buttonFont = pref.getString("list_preference_5","Coolvetica");
+        String buttonFontColor=pref.getString("list_preference_7","White");
+        ConstraintLayout constraintLayout = findViewById(R.id.screen1);
+        String screenColor=pref.getString("list_preference_8","Black");
 
         switch (title1New){
             case "White":
                 title1.setTextColor(getResources().getColor(R.color.white));
                 break;
             case "Blue":
-                title1.setTextColor(getResources().getColor(R.color.teal_700));
+                title1.setTextColor(getResources().getColor(R.color.blue));
                 break;
             case "Green":
                 title1.setTextColor(getResources().getColor(R.color.green));
@@ -215,6 +225,80 @@ public class MainActivity extends AppCompatActivity {
         }
         button1.setTextSize(Float.parseFloat(buttonSize));
         button2.setTextSize(Float.parseFloat(buttonSize));
+        switch (buttonFontColor){
+            case "White":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.white));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.green));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button1.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                button2.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
+        switch (screenColor){
+            case "White":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.blue));
+                break;
+            case "Green":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.black_background));
+                break;
+            case "Cream":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Purple":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.grey));
+                break;
+            case "Red":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Red));
+                break;
+        }
     }
 
     private void setSettingsScreen2(){
@@ -228,6 +312,11 @@ public class MainActivity extends AppCompatActivity {
         String buttonBackground= pref.getString("list_preference_4","Grey");
         String buttonFont = pref.getString("list_preference_5","Coolvetica");
         String buttonSize=pref.getString("list_preference_6", "30");
+        String buttonFontColor=pref.getString("list_preference_7","White");
+        ConstraintLayout constraintLayout = findViewById(R.id.screen2);
+        String screenColor=pref.getString("list_preference_8","Black");
+
+
 
         switch (title1New){
             case "White":
@@ -348,6 +437,114 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         button.setTextSize(Float.parseFloat(buttonSize));
+        switch (buttonFontColor){
+            case "White":
+                button.setTextColor(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button.setTextColor(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
+        switch (screenColor){
+            case "White":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.blue));
+                break;
+            case "Green":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.black_background));
+                break;
+            case "Cream":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Purple":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.grey));
+                break;
+            case "Red":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Red));
+                break;
+        }
+
+        List<RadioButton> list=new ArrayList<RadioButton>();
+        for (int i = 0; i < nRadioButtons; i++) {
+            int id = getResources().getIdentifier("radioButton"+(1+i), "id", getPackageName());
+            list.add((RadioButton) findViewById(id));
+        }
+
+        String textSize = pref.getString("list_preference_10", "24");
+        String textFont = pref.getString("list_preference_9","Coolvetica");
+        String textColor = pref.getString("list_preference_11","White");
+
+        switch (textFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Arial);
+                }
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Comic);
+                }
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Coolvetica);
+                }
+                break;
+            case "Book Antiqua":
+                Typeface Booqantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Booqantiqua);
+                }
+                break;
+            case "Times New Roman":
+                Typeface Times = ResourcesCompat.getFont(this, R.font.times);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Times);
+                }
+                break;
+        }
+
     }
 
     private void setSettingsScreen3(){
@@ -361,6 +558,11 @@ public class MainActivity extends AppCompatActivity {
         String buttonBackground= pref.getString("list_preference_4","Grey");
         String buttonFont = pref.getString("list_preference_5","Coolvetica");
         String buttonSize=pref.getString("list_preference_6", "30");
+        String buttonFontColor=pref.getString("list_preference_7","White");
+        ConstraintLayout constraintLayout = findViewById(R.id.screen3);
+        String screenColor=pref.getString("list_preference_8","Black");
+
+
         switch (title1New){
             case "White":
                 title3.setTextColor(getResources().getColor(R.color.white));
@@ -372,7 +574,7 @@ public class MainActivity extends AppCompatActivity {
                 title3.setTextColor(getResources().getColor(R.color.green));
                 break;
             case "Black":
-                title3.setTextColor(getResources().getColor(R.color.black));
+                title3.setTextColor(getResources().getColor(R.color.black_background));
                 break;
             case "Cream":
                 title3.setTextColor(getResources().getColor(R.color.cream));
@@ -480,6 +682,70 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         button.setTextSize(Float.parseFloat(buttonSize));
+        switch (buttonFontColor){
+            case "White":
+                button.setTextColor(this.getResources().getColorStateList(R.color.white));
+                break;
+            case "Blue":
+                button.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                break;
+            case "Green":
+                button.setTextColor(this.getResources().getColorStateList(R.color.green));
+                break;
+            case "Black":
+                button.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                break;
+            case "Cream":
+                button.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                break;
+            case "Yellow":
+                button.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                break;
+            case "Teal":
+                button.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                break;
+            case "Purple":
+                button.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                break;
+            case "Grey":
+                button.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                break;
+            case "Red":
+                button.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                break;
+        }
+        switch (screenColor){
+            case "White":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+            case "Blue":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.blue));
+                break;
+            case "Green":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.green));
+                break;
+            case "Black":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.black_background));
+                break;
+            case "Cream":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.cream));
+                break;
+            case "Yellow":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Yellow));
+                break;
+            case "Teal":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.teal_700));
+                break;
+            case "Purple":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.purple_500));
+                break;
+            case "Grey":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.grey));
+                break;
+            case "Red":
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.Red));
+                break;
+        }
     }
 }
 
