@@ -3,6 +3,12 @@
     android:backgroundTintMode="src_in">
     <PreferenceCategory android:title="@string/textview5">
 
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Edit text preference" />
         <ListPreference
             android:defaultValue="Coolvetica"
             android:entries="@array/font_entries"
@@ -70,21 +76,21 @@
     <PreferenceCategory android:title="@string/normaltext">
 
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="Coolvetica"
             android:entries="@array/normaltextfont_entries"
             android:entryValues="@array/normaltextfont_values"
             android:key="list_preference_9"
             android:summary="Click to select an option"
             android:title="@string/titlesFont" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="30"
             android:entries="@array/normaltextsize_entries"
             android:entryValues="@array/normaltextsize_values"
             android:key="list_preference_10"
             android:summary="Click to select an option"
             android:title="@string/titlesSize" />
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="White"
             android:entries="@array/normaltextcolor_entries"
             android:entryValues="@array/normaltextcolor_values"
             android:key="list_preference_11"
