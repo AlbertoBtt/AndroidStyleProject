@@ -38,7 +38,10 @@
     <string name="textView2">What do you prefer from Stary Rynek?</string>
     <string name="textTest">Test Text</string>
     <string name="textReturn">RETURN</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="white_theme">White Theme</string>
+    <string name="cream_theme">Cream Theme</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

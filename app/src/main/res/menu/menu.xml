@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:onClick="settings"
         android:title="@string/title_activity_settings" />
+    <item
+        android:checkable="false"
+        android:onClick="setDarkTheme"
+        android:title="@string/dark_theme" />
+    <item
+        android:onClick="setWhiteTheme"
+        android:title="@string/white_theme" />
+    <item
+        android:onClick="setCreamTheme"
+        android:title="@string/cream_theme" />
 </menu>

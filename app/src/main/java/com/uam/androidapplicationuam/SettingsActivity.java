@@ -6,12 +6,14 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 
@@ -50,4 +52,6 @@ public class SettingsActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

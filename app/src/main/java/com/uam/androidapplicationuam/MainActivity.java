@@ -906,5 +906,89 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public boolean setDarkTheme(MenuItem item){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        //Tittle Color
+        pref.edit().putString("list_preference_3","White").apply();
+        //Tittle Size
+        pref.edit().putString("list_preference_1", "36").apply();
+        //Tittle Font
+        pref.edit().putString("list_preference_2","Coolvetica").apply();
+        //Button Color
+        pref.edit().putString("list_preference_4","Grey").apply();
+        //Button Font Size
+        pref.edit().putString("list_preference_6", "30").apply();
+        //Button Font
+        pref.edit().putString("list_preference_5","Coolvetica").apply();
+        //Button Font Color
+        pref.edit().putString("list_preference_7","White").apply();
+        //Screen Background Color
+        pref.edit().putString("list_preference_8","Black").apply();
+        //CheckBox and RadioButton text size
+        pref.edit().putString("list_preference_10", "24").apply();
+        //CheckBox adn RadioButton text font
+        pref.edit().putString("list_preference_9","Coolvetica").apply();
+        //CheckBox and RadioButton text color
+        pref.edit().putString("list_preference_11","White").apply();
+        recreate();
+        return true;
+    }
+
+    public boolean setWhiteTheme(MenuItem item){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        //Tittle Color
+        pref.edit().putString("list_preference_3","Black").apply();
+        //Tittle Size
+        pref.edit().putString("list_preference_1", "36").apply();
+        //Tittle Font
+        pref.edit().putString("list_preference_2","Coolvetica").apply();
+        //Button Color
+        pref.edit().putString("list_preference_4","Grey").apply();
+        //Button Font Size
+        pref.edit().putString("list_preference_6", "30").apply();
+        //Button Font
+        pref.edit().putString("list_preference_5","Coolvetica").apply();
+        //Button Font Color
+        pref.edit().putString("list_preference_7","White").apply();
+        //Screen Background Color
+        pref.edit().putString("list_preference_8","White").apply();
+        //CheckBox and RadioButton text size
+        pref.edit().putString("list_preference_10", "24").apply();
+        //CheckBox adn RadioButton text font
+        pref.edit().putString("list_preference_9","Coolvetica").apply();
+        //CheckBox and RadioButton text color
+        pref.edit().putString("list_preference_11","Black").apply();
+        recreate();
+        return true;
+    }
+
+    public boolean setCreamTheme(MenuItem item){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        //Tittle Color
+        pref.edit().putString("list_preference_3","Black").apply();
+        //Tittle Size
+        pref.edit().putString("list_preference_1", "36").apply();
+        //Tittle Font
+        pref.edit().putString("list_preference_2","Arial").apply();
+        //Button Color
+        pref.edit().putString("list_preference_4","Grey").apply();
+        //Button Font Size
+        pref.edit().putString("list_preference_6", "30").apply();
+        //Button Font
+        pref.edit().putString("list_preference_5","Arial").apply();
+        //Button Font Color
+        pref.edit().putString("list_preference_7","White").apply();
+        //Screen Background Color
+        pref.edit().putString("list_preference_8","Cream").apply();
+        //CheckBox and RadioButton text size
+        pref.edit().putString("list_preference_10", "24").apply();
+        //CheckBox adn RadioButton text font
+        pref.edit().putString("list_preference_9","Arial").apply();
+        //CheckBox and RadioButton text color
+        pref.edit().putString("list_preference_11","Black").apply();
+        recreate();
+        return true;
+    }
 }
 
