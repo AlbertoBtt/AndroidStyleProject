@@ -66,21 +66,21 @@
                 android:layout_height="match_parent">
 
                 <CheckBox
-                    android:id="@+id/checkBox20"
+                    android:id="@+id/checkBox1"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox1" />
 
                 <CheckBox
-                    android:id="@+id/checkBox24"
+                    android:id="@+id/checkBox4"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox4" />
 
                 <CheckBox
-                    android:id="@+id/checkBox27"
+                    android:id="@+id/checkBox5"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -92,21 +92,21 @@
                 android:layout_height="match_parent">
 
                 <CheckBox
-                    android:id="@+id/checkBox21"
+                    android:id="@+id/checkBox2"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox2" />
 
                 <CheckBox
-                    android:id="@+id/checkBox25"
+                    android:id="@+id/checkBox6"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox5" />
 
                 <CheckBox
-                    android:id="@+id/checkBox28"
+                    android:id="@+id/checkBox8"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -118,21 +118,21 @@
                 android:layout_height="match_parent">
 
                 <CheckBox
-                    android:id="@+id/checkBox22"
+                    android:id="@+id/checkBox3"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox3" />
 
                 <CheckBox
-                    android:id="@+id/checkBox26"
+                    android:id="@+id/checkBox7"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox6" />
 
                 <CheckBox
-                    android:id="@+id/checkBox30"
+                    android:id="@+id/checkBox9"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -145,21 +145,21 @@
                 android:layout_height="match_parent">
 
                 <CheckBox
-                    android:id="@+id/checkBox23"
+                    android:id="@+id/checkBox10"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox4" />
 
                 <CheckBox
-                    android:id="@+id/checkBox29"
+                    android:id="@+id/checkBox11"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox1" />
 
                 <CheckBox
-                    android:id="@+id/checkBox31"
+                    android:id="@+id/checkBox12"
                     style="@style/Checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

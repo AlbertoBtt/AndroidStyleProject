@@ -15,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private int nRadioButtons =8;
+    private int nCheckboxes =12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -802,6 +804,108 @@ public class MainActivity extends AppCompatActivity {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.Red));
                 break;
         }
+
+        List<CheckBox> list=new ArrayList<CheckBox>();
+        for (int i = 0; i < nCheckboxes; i++) {
+            int id = getResources().getIdentifier("checkBox"+(1+i), "id", getPackageName());
+            list.add((CheckBox) findViewById(id));
+        }
+
+        String textSize = pref.getString("list_preference_10", "24");
+        String textFont = pref.getString("list_preference_9","Coolvetica");
+        String textColor = pref.getString("list_preference_11","White");
+
+        switch (textFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTypeface(Arial);
+                }
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTypeface(Comic);
+                }
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTypeface(Coolvetica);
+                }
+                break;
+            case "Book Antiqua":
+                Typeface Booqantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTypeface(Booqantiqua);
+                }
+                break;
+            case "Times New Roman":
+                Typeface Times = ResourcesCompat.getFont(this, R.font.times);
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTypeface(Times);
+                }
+                break;
+        }
+        switch (textColor){
+            case "White":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.white));
+                }
+                break;
+            case "Blue":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.blue));
+                }
+                break;
+            case "Green":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.green));
+                }
+                break;
+            case "Black":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.black));
+                }
+                break;
+            case "Cream":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.cream));
+                }
+                break;
+            case "Yellow":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.Yellow));
+                }
+                break;
+            case "Teal":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.teal_700));
+                }
+                break;
+            case "Purple":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.purple_500));
+                }
+                break;
+            case "Grey":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.grey));
+                }
+                break;
+            case "Red":
+                for (int i = 0; i < nCheckboxes; ++i) {
+                    list.get(i).setTextColor(getResources().getColor(R.color.Red));
+                }
+                break;
+        }
+
+        for(int i=0;i<nCheckboxes;i++){
+            list.get(i).setTextSize(Float.parseFloat(textSize));
+        }
+
+
+
     }
 }
 
