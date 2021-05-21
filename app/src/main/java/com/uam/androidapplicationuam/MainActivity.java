@@ -15,12 +15,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
-    Context context = this;
+
+    private int nRadioButtons =8;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -495,6 +501,50 @@ public class MainActivity extends AppCompatActivity {
                 constraintLayout.setBackgroundColor(getResources().getColor(R.color.Red));
                 break;
         }
+
+        List<RadioButton> list=new ArrayList<RadioButton>();
+        for (int i = 0; i < nRadioButtons; i++) {
+            int id = getResources().getIdentifier("radioButton"+(1+i), "id", getPackageName());
+            list.add((RadioButton) findViewById(id));
+        }
+
+        String textSize = pref.getString("list_preference_10", "24");
+        String textFont = pref.getString("list_preference_9","Coolvetica");
+        String textColor = pref.getString("list_preference_11","White");
+
+        switch (textFont){
+            case "Arial":
+                Typeface Arial = ResourcesCompat.getFont(this, R.font.arial);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Arial);
+                }
+                break;
+            case "Comic Sans":
+                Typeface Comic = ResourcesCompat.getFont(this, R.font.comic);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Comic);
+                }
+                break;
+            case "Coolvetica":
+                Typeface Coolvetica = ResourcesCompat.getFont(this, R.font.coolvetica);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Coolvetica);
+                }
+                break;
+            case "Book Antiqua":
+                Typeface Booqantiqua = ResourcesCompat.getFont(this, R.font.bookantiqua);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Booqantiqua);
+                }
+                break;
+            case "Times New Roman":
+                Typeface Times = ResourcesCompat.getFont(this, R.font.times);
+                for (int i = 0; i < nRadioButtons; ++i) {
+                    list.get(i).setTypeface(Times);
+                }
+                break;
+        }
+
     }
 
     private void setSettingsScreen3(){
