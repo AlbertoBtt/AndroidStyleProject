@@ -1,11 +1,11 @@
 package com.uam.androidapplicationuam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.PreferenceManager;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
@@ -25,9 +25,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private int nRadioButtons =8;
-    private int nCheckboxes =12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -185,88 +182,88 @@ public class MainActivity extends AppCompatActivity {
         }
         switch (buttonBackground){
             case "White":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.white));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.blue));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.green));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.black_background));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.cream));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Yellow));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.teal_700));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.purple_500));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.grey));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button1.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
-                button2.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                button1.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Red));
+                button2.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         button1.setTextSize(Float.parseFloat(buttonSize));
         button2.setTextSize(Float.parseFloat(buttonSize));
         switch (buttonFontColor){
             case "White":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.white));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.white));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.white));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.blue));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.blue));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.green));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.green));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.green));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.black_background));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.black_background));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.cream));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.cream));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.Yellow));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.teal_700));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.purple_500));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.grey));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.grey));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button1.setTextColor(this.getResources().getColorStateList(R.color.Red));
-                button2.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                button1.setTextColor(AppCompatResources.getColorStateList(this,R.color.Red));
+                button2.setTextColor(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         switch (screenColor){
@@ -382,34 +379,34 @@ public class MainActivity extends AppCompatActivity {
         title2.setTextSize(Float.parseFloat(titleSize));
         switch (buttonBackground){
             case "White":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         switch (buttonFont){
@@ -441,34 +438,34 @@ public class MainActivity extends AppCompatActivity {
         button.setTextSize(Float.parseFloat(buttonSize));
         switch (buttonFontColor){
             case "White":
-                button.setTextColor(this.getResources().getColorStateList(R.color.white));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button.setTextColor(this.getResources().getColorStateList(R.color.green));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         switch (screenColor){
@@ -504,7 +501,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        List<RadioButton> list=new ArrayList<RadioButton>();
+        List<RadioButton> list= new ArrayList<>();
+        int nRadioButtons = 8;
         for (int i = 0; i < nRadioButtons; i++) {
             int id = getResources().getIdentifier("radioButton"+(1+i), "id", getPackageName());
             list.add((RadioButton) findViewById(id));
@@ -547,7 +545,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        for(int i=0;i<nRadioButtons;i++){
+        for(int i = 0; i< nRadioButtons; i++){
             list.get(i).setTextSize(Float.parseFloat(textSize));
         }
 
@@ -683,34 +681,34 @@ public class MainActivity extends AppCompatActivity {
         title3.setTextSize(Float.parseFloat(titleSize));
         switch (buttonBackground){
             case "White":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.white));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.blue));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.green));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.black_background));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.cream));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Yellow));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.teal_700));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.purple_500));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.grey));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button.setBackgroundTintList(this.getResources().getColorStateList(R.color.Red));
+                button.setBackgroundTintList(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         switch (buttonFont){
@@ -742,34 +740,34 @@ public class MainActivity extends AppCompatActivity {
         button.setTextSize(Float.parseFloat(buttonSize));
         switch (buttonFontColor){
             case "White":
-                button.setTextColor(this.getResources().getColorStateList(R.color.white));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.white));
                 break;
             case "Blue":
-                button.setTextColor(this.getResources().getColorStateList(R.color.blue));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.blue));
                 break;
             case "Green":
-                button.setTextColor(this.getResources().getColorStateList(R.color.green));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.green));
                 break;
             case "Black":
-                button.setTextColor(this.getResources().getColorStateList(R.color.black_background));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.black_background));
                 break;
             case "Cream":
-                button.setTextColor(this.getResources().getColorStateList(R.color.cream));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.cream));
                 break;
             case "Yellow":
-                button.setTextColor(this.getResources().getColorStateList(R.color.Yellow));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.Yellow));
                 break;
             case "Teal":
-                button.setTextColor(this.getResources().getColorStateList(R.color.teal_700));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.teal_700));
                 break;
             case "Purple":
-                button.setTextColor(this.getResources().getColorStateList(R.color.purple_500));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.purple_500));
                 break;
             case "Grey":
-                button.setTextColor(this.getResources().getColorStateList(R.color.grey));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.grey));
                 break;
             case "Red":
-                button.setTextColor(this.getResources().getColorStateList(R.color.Red));
+                button.setTextColor(AppCompatResources.getColorStateList(this,R.color.Red));
                 break;
         }
         switch (screenColor){
@@ -805,7 +803,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        List<CheckBox> list=new ArrayList<CheckBox>();
+        List<CheckBox> list= new ArrayList<>();
+        int nCheckboxes = 12;
         for (int i = 0; i < nCheckboxes; i++) {
             int id = getResources().getIdentifier("checkBox"+(1+i), "id", getPackageName());
             list.add((CheckBox) findViewById(id));
@@ -900,7 +899,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        for(int i=0;i<nCheckboxes;i++){
+        for(int i = 0; i< nCheckboxes; i++){
             list.get(i).setTextSize(Float.parseFloat(textSize));
         }
 
